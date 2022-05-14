@@ -291,48 +291,98 @@ h3, .h3, h2, .h2, h1, .h1 {
     margin-bottom: 50px;
 }
 .price-table .price-box {
-    background-color: #fff;
+    background-color: rgba(130, 130, 130, 0.21);
     padding: 10px;
     border: 1px solid #DDD;
-    height: 400px;
+    height: 550px;
+    transition-duration: 0.3s
 }
 .price-table .price-box h4 {
-    margin: 5px 0 15px;
+    transform: translate(0, 70%);
+    font-size: 40px;
+    font-weight: bold;
+    transition-duration: 0.4s
 }
 .price-table .price-box p {
-    font-size: 35px;
+    font-size: 100px;
     font-weight: 600;
     color: #666;
-    margin-top: 50px;
-    transition-duration: 0.7s;
+    transform: translate(0, 75%);
+    transition-duration: 0.8s;
 }
-/* .price-table .price-box .cicel::after {
+.price-table .price-box .cicel::after {
     content: '';
     display: block;
-    width: 100px;
-    height: 100px;
-    background-color: rgba(130, 130, 130, 0.21);
-    position: relative;
-    margin-top: -25px;
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+    position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-}  */
+    transform: translate(-50%, -53%);
+    transition-duration: 0.6s;
+}
 
 .list-unstyled {
     text-align: left;
 }
-.price-table .price-box .collapse {
-    transition:0.5s ;
-}
-.price-table .price-box .collapse ul {
+.price-table .price-box  ul {
     line-height: 200%;
-    font-size: 20px;
+    font-size: 25px;
+    transform: translate(0, 11%);
 }
-.btn-success {
-    font-weight: 700;
-}
+.price-table .price-box .advant {
+    display: none;
+    transition-duration: 1.5s;
 
+}
+.price-table .price-box:hover {
+    background-color: #fff;
+}
+.price-table .price-box:hover .advant {
+    display: block;
+}
+.price-table .price-box:hover h4 {
+    transform: translate(0, 35%);
+    font-size: 40px;
+    font-weight: 300;
+}
+.price-table .price-box:hover p {
+    font-size: 50px;
+    font-weight: 600;
+    color: #666;
+    transform: translate(0, 35%) rotate(360deg);
+}
+.price-table .price-box:hover .cicel::after {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(130, 130, 130, 0.21);
+    position: absolute;
+    margin-top: 0px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
 /* end price table  */
 
+/* start our team */
+.our-team {
+    background: url(../img/back-team.jpg) no-repeat center center fixed;
+    width: 100%;
+    min-height: 600px;
+}
+.our-team .team-box {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: rgba(2,2,2,0.8);
+    color: #fff;
+    height: 600px;
+}
+.our-team h1 {
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+/* end our team */
