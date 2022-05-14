@@ -489,8 +489,10 @@ h3, .h3, h2, .h2, h1, .h1 {
 /* end contact us  */
  /* start footer  */
  footer {
+     padding-top: 20px;
      width: 100%;
      height: 100px;
      background: #212529;
+     color: #fff;
  }
  /* end footer  */
