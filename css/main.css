@@ -3,7 +3,6 @@
 }
 body {
     padding-top: 70px;
-    height: 2000vh;
 }
 
 /*** started over ride bootstrap ***/
@@ -19,7 +18,7 @@ body {
     color: var(--min-color);
 }
 .navbar-expand-lg .navbar-collapse {
-    margin-left: 38%;
+    margin-left: 35%;
 }
 @media (max-width: 992px) {
     .navbar-expand-lg .navbar-collapse {
@@ -372,18 +371,126 @@ h3, .h3, h2, .h2, h1, .h1 {
 /* start our team */
 .our-team {
     background: url(../img/back-team.jpg) no-repeat center center fixed;
-    width: 100%;
-    min-height: 600px;
+    background-size: cover;
+
 }
 .our-team .team-box {
-    padding-top: 100px;
+    padding-top: 50px;
     padding-bottom: 100px;
     background: rgba(2,2,2,0.8);
     color: #fff;
-    height: 600px;
+    height: 100%;
 }
 .our-team h1 {
     font-weight: 700;
     margin-bottom: 50px;
 }
+.our-team .preson img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.our-team .preson {
+    margin-bottom: 50px;
+}
+.our-team .preson a {
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 0.5s;
+}
+.our-team .preson a:hover .bi {
+    opacity: 0.5;
+}
 /* end our team */
+/* start subscribe */
+.subscribe {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #eee;
+}
+.subscribe h1 {
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #BBB;
+}
+.subscribe .input-group {
+    margin-left: 25%;
+    margin-top: 50px;
+    width: 50%;
+}
+.input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu),
+.input-group:not(.has-validation) > .dropdown-toggle:nth-last-child(n+3) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+@media (max-width:992px) {
+    .subscribe .input-group {
+        margin-left: 10%;
+        width: 80%;
+    }
+}
+/* end subscribe */
+/* start skills */
+.skills {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.skills h1 {
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+.skills .progress {
+    height: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.skills .skills-info {
+    text-align: left;
+}
+/* end skills */
+/* start contact us  */
+.contact-us {
+    background: url(../img/contact-us.png) no-repeat center center fixed;
+    background-size: cover;
+}
+.contact-us .contact-box {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background: rgba(2,2,2,0.8);
+    color: #fff;
+    height: 100%;
+}
+.contact-us h1 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.contact-us p {
+    margin-bottom: 50px;
+}
+.contact-us i {
+    font-size: 50px;
+}
+.contact-us .contact-box input {
+    height: 55px;
+}
+.contact-us .contact-box textarea {
+    height: 150px;
+}
+.contact-us .contact-box input[type="text"],
+.contact-us .contact-box textarea {
+    background: #eee;
+}
+/* end contact us  */
+ /* start footer  */
+ footer {
+     width: 100%;
+     height: 100px;
+     background: #212529;
+ }
+ /* end footer  */
