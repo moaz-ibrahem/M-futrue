@@ -295,7 +295,8 @@ h3, .h3, h2, .h2, h1, .h1 {
     padding: 10px;
     border: 1px solid #DDD;
     height: 550px;
-    transition-duration: 0.3s
+    transition-duration: 0.3s;
+    margin-bottom: 50px;
 }
 .price-table .price-box h4 {
     transform: translate(0, 70%);
